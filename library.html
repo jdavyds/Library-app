@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY</title>
+    <link rel="stylesheet" href="library.css">
+</head>
+
+<body>
+  <header> <h1>
+      Welcome to JDAVYDS LIBRARY
+    </h1>
+    </header>
+    <main>
+        <form class="librarian" novalidate>
+            <label for="user-title">Book Title <br>
+                <input type="text" name="user-title" class="user-title" required minlength="2">
+                <span class="title-error" aria-live="polite"></span>
+            </label>
+            <label for="user-author"> Author <br>
+                <input type="text" name="user-author" id="user-author" required minlength="2">
+                <span class="author-error" aria-live="polite"></span>
+            </label>
+            <label for="book-pages">No of Pages <br>
+                <input type="number" name="book-pages" id="book-pages" required min="30">
+                <span class="pages-error" aria-live="polite"></span>
+            </label>
+            <button type="submit" class="submit">submit</button>
+            <button type="reset" class="reset">New Book</button>
+        </form>
+       <div class="lib-container">
+
+           <div class="library">
+               
+        </div>
+    </div>
+  
+        <script src="library.js"></script>
+        
+    </main>
+
+</body>
+
+</html>
